@@ -43,9 +43,20 @@ def index(request:Request):
     )
 
 #
-# ルーティング定義
+# Controller 定義
+# /{item_name}
 #
-#app.add_api_route("/", index)
+@app.get("/{item_name}", response_class=HTMLResponse)
+def index(request:Request, item_name:str, query_string:str):
+    context = {
+        "request":request,
+        "item_name":item_name,
+        "query_string":query_string
+    }
+    return templates.TemplateResponse(
+        "item.html",
+        context
+    )
 
 #
 # Mangumフレームワークのインスタンス化
