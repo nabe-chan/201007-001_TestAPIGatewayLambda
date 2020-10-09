@@ -4,7 +4,8 @@ AWS API Gateway と Lambda で 動的Webページを返却するサンプルコ�
 
 # 目的
 
-WEBアプリケーションサーバとLambdaの、いずれでも動作するコードを作成することです。および、各技術の習熟のためです。
+WEBアプリケーションサーバとLambdaの、いずれでも動作するコードを作成することです。  
+および、各技術の習熟のためです。
 
 # 使用した技術
 
@@ -84,6 +85,6 @@ pip install fastapi mangum jinja2 aiofiles uvicorn -t python/lib/python3.8/site-
 
 # 最後に
 
-修正してほしい・追加してほしい点、ご質問がありましたら、
-Twitterアカウントまでご連絡ください。
+修正してほしい・追加してほしい点、ご質問がありましたら、  
+Twitterアカウントまでご連絡ください。  
 (Twitter: nabe-chan@harukaze256)
