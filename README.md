@@ -29,7 +29,7 @@ Python
 - 開発環境に python3.8 がインストール済みであること。
 - 開発環境に リポジトリデータがダウンロードされていること。
 
-## uvicorn
+## パターンA: uvicornでローカル実行
 
 1. 以下のライブラリをpipでインストール
 ```
@@ -41,7 +41,7 @@ python src/main.py
 ```
 3. ブラウザから`http://127.0.0.1:8000`へアクセス
 
-## API Gateway/lambda
+## パターンB: API Gateway/lambdaでクラウド実行
 
 ### layerデータ作成
 
@@ -78,7 +78,7 @@ pip install fastapi mangum jinja2 aiofiles uvicorn -t python/lib/python3.8/site-
 ```
 6. Lambda FunctionのLayerを先ほどアップロードしたlayerに変更
 
-### 確認
+### 動作確認
 
 1. API Gatewayの作成したステージのURLへアクセス
 2. 必要に応じて、CloudWatchのロググループからログを確認
