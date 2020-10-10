@@ -78,13 +78,13 @@ pip install fastapi mangum jinja2 aiofiles uvicorn -t python/lib/python3.8/site-
 ```
 6. Lambda FunctionのLayerを先ほどアップロードしたlayerに変更
 
-### 動作確認
+### 確認
 
 1. API Gatewayの作成したステージのURLへアクセス
 2. 必要に応じて、CloudWatchのロググループからログを確認
 
 # 最後に
 
-修正してほしい・追加してほしい点、ご質問がありましたら、  
+ご質問・ご要望がありましたら、  
 Twitterアカウントまでご連絡ください。  
 (Twitter: nabe-chan@harukaze256)
